@@ -1,0 +1,9 @@
+<h1>投稿画面</h1> 
+  <p>Find me in app/views/samples/input.html.erb</p>  
+    <%= form_for Sample.new do |f| %>  
+      <%= f.label :title,"タイトル" %>  
+      <%= f.text_field :title %><br />   
+      <%= f.label :contents,"内容" %><br />  
+      <%= f.text_area :contents ,cols: 60, rows: 8%><br />  
+      <%= f.submit %>  
+    <% end %>
